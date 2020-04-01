@@ -33,3 +33,6 @@
 display: block;
 background-color: ghostwhite;
 }
+.dropdown:hover{
+    opacity: 1;
+}

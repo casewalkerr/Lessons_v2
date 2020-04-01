@@ -14,4 +14,8 @@
     padding: 8px;
     position: absolute;
     bottom: -40px;
+    display: none;
+}
+.text:hover .tooltip{
+    display: block;
 }

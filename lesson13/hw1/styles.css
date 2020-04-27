@@ -9,4 +9,6 @@ div > div {
     background-size: cover;
     background-size: contain;
     display: inline-block;
+    background-repeat: no-repeat;
+    background-position: y center;
 }

@@ -1,0 +1,12 @@
+div > div {
+    border: 1px dotted grey;
+    margin: 16px;
+}
+.image {
+    width: 200px;
+    height: 200px;
+    background-position-x: center;
+    background-size: cover;
+    background-size: contain;
+    display: inline-block;
+}

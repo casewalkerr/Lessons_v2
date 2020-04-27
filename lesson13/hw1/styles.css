@@ -8,10 +8,9 @@ div > div {
     background-position-x: center;
     background-size: cover;
     background-size: contain;
-    display: inline-block;
     background-repeat: no-repeat;
     background-position-y: center;
 }
-* {
-    box-sizing: border-box;
+.gallery {
+    display: flex;
 }

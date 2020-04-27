@@ -12,3 +12,6 @@ div > div {
     background-repeat: no-repeat;
     background-position-y: center;
 }
+* {
+    box-sizing: border-box;
+}

@@ -10,5 +10,5 @@ div > div {
     background-size: contain;
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: y center;
+    background-position-y: center;
 }

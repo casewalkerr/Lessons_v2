@@ -49,3 +49,6 @@ body {
     text-transform: uppercase;
     margin-top: 16px;
 }
+.form-control {
+    margin-bottom: 8px;
+}

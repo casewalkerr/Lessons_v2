@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 table {
-    
+    margin: 16px;
     width: 500px;
 }
 table, td, th {
@@ -25,7 +25,7 @@ tfoot {
      font-weight: 700;
 }
 caption {
-    margin: 8px;
+    margin-bottom: 8px;
 }
 tbody > tr:nth-last-child(odd) {
     background-color: #f2f2f2;

@@ -19,7 +19,7 @@
     fill: white;
 }
 .custom-button:hover {
-    color: green;
+    color: darkcyan;
 }
 .custom-button:hover > .bird-icon {
     fill: green;

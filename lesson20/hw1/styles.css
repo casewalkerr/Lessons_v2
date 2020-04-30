@@ -11,7 +11,7 @@
         font-family: monospace;
         font-size: 16px;
         text-transform: uppercase;
-        animation: blinking 2s infinite linear;
+        animation: blinking 2s 0s infinite linear;
         
     }
     .circle {
@@ -22,7 +22,7 @@
         margin: auto;
         margin-bottom: 8px;
         border-radius: 50%;
-        animation: spin 2s  linear infinite;
+        animation: spin 2s 0s linear infinite;
     }
     .spiner {
         display: flex;

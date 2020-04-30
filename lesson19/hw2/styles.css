@@ -17,8 +17,7 @@
     animation: greating 2s ;
     transition-timing-function: ease;
     animation-fill-mode: forwards; 
-    position: absolute;   
-    
+    position: relative;  
 }
 .container-block {
     display: flex;
@@ -30,6 +29,6 @@
     top:-100px;
   }
   to {
-    top: calc(50vh - 50 px);
+    top: calc(50vh - 50px);
   }
 }

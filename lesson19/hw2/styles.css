@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+.block {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px; 
+    animation: greating 2s ;
+    transition-timing-function: ease;
+    animation-fill-mode: forwards; 
+    position: relative;   
+}
+.container-block {
+    display: flex;
+    justify-content: center;
+    
+}
+@keyframes greating {
+from {
+    top:-100px;
+}
+to {
+    top: calc(50vh - 50 px);
+}
+}

@@ -29,10 +29,10 @@ span {
         display: flex;
     }
     .navigation {
-        width: 50%;
+        width: 50vw;
     }
     .products-list {
-        width: 50%;
+        width: 50vw;
     }
 }
 @media screen and (min-width: 900px) {
@@ -40,12 +40,12 @@ span {
         display: flex;
     }
     .navigation {
-        width: 33.33vw;
+        width: 33.3vw;
     }
     .products-list {
-        width: 33.33vw;
+        width: 33.3vw;
     }
     .news {
-        width: 33.33vw;
+        width: 33.3vw;
     }
 }

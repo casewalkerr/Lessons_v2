@@ -27,7 +27,12 @@ span {
 @media screen and (min-width: 600px) {
     .products{
         display: flex;
-        flex-grow: 2;
+    }
+    .navigation {
+        width: 50%;
+    }
+    .products-list {
+        width: 50%;
     }
 }
 @media screen and (min-width: 900px) {

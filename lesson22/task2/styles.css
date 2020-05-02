@@ -40,12 +40,12 @@ span {
         display: flex;
     }
     .navigation {
-        width: 33.3vw;
+        width: 33.3333vw;
     }
     .products-list {
-        width: 33.3vw;
+        width: 33.3333vw;
     }
     .news {
-        width: 33.3vw;
+        width: 33.3333vw;
     }
 }

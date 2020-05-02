@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            height: 3em;
+            padding: 0 1em;
+            background-color: #eee;
+        }
+        .fa-bars {
+            font-size: 2em;
+        }
+        button {
+            padding: 0;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .navigation {
+            width: 20%;
+            padding: 0.5em;
+        }
+        .nav-list-item {
+            background-color: #808080;
+            color: white;
+            height: 2em;
+            margin-bottom: 0.5em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .nav-list-link {
+            padding: 0 0.5em;
+            color: white;
+            line-height: 2em;
+            text-decoration: none;
+            /* overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; */
+        }
+        @media screen and (min-width: 600px) {
+            .fa-bars {
+                visibility: hidden;
+            }
+           
+        }
+</style>
+</head>
+
+<body>
+    <header class="header"><button><i class="fas fa-bars"></i></button></header>
+    <main class="main">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Responsive images</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Mediaqueries</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="#">Flexbox</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+
+</html>

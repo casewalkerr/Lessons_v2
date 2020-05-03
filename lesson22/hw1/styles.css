@@ -48,14 +48,14 @@ button {
     white-space: nowrap;
     text-overflow: ellipsis; */
 }
-/* @media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
     .fa-bars {
         visibility: visible;
     }
     .navigation {
         visibility: hidden;
     }
-} */
+}
 @media screen and (min-width: 600px) {
     .fa-bars {
         visibility: hidden;

@@ -10,6 +10,14 @@ body {
     justify-content: center;
     height: 100vh;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    @include for-landscape {
+        flex-direction: row;
+        
+    }
+}
 .square {
     width: 100px;
     height: 100px;
@@ -25,11 +33,5 @@ body {
     }
     @include for-large-up {
         background-color: #c47;
-    }
-
-    .container {
-        @include for-landscape {
-            display: flex;
-        }
     }
 }

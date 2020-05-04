@@ -1,0 +1,44 @@
+@import 'layout.scss';
+* {
+    box-sizing: border-box;
+}
+@include for-small {
+    .products {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    @include for-middle {
+        flex-direction: row;
+        .list {
+            width: 33.333333vw;
+        }
+    }
+}
+.list {
+    display: flex;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+span {
+    text-transform: lowercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #faebd7;
+    border-radius: 4px;
+    padding: 8px;
+}
+.navigation {
+    background-color: #ff7f50;
+}
+.product {
+    background-color: #006400;
+}
+.news {
+    background-color: #0ff;
+}
+

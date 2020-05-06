@@ -38,17 +38,14 @@ html {
             text-align: center;
             font-weight: 300;
         }
-    }    
-}
-
-.price-card__price {
-    display: flex;
-    
-    position: relative;
-    height: 105px;
-    width: 380px;
-    margin-top: 33px;
-    &-text {
+    } 
+    &__price {
+        display: flex;
+        position: relative;
+        height: 105px;
+        width: 380px;
+        margin-top: 33px;
+    &-text { 
         color: #fff;
         font-style: normal;
         font-weight: bold;
@@ -56,7 +53,8 @@ html {
         font-size: 55px;
         line-height: 67px;
         font-style: normal;
-    }
+        }
+    }  
 }
 
 .price-card__description {
@@ -89,8 +87,7 @@ html {
             font-size: 15px;
             line-height: 18px;
             color: #fff;
-        }
-        
+        }   
     }
 }
 li:nth-child(odd) {
@@ -140,7 +137,6 @@ li:nth-child(odd) {
         color: #FFF;
         font-weight: bold;
         text-transform: uppercase;
-        
     }
 }
 .price-card__price.green {

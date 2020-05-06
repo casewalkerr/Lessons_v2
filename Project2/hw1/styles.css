@@ -35,12 +35,13 @@ html {
 .price-card__title-h1 {
   font-size: 35px;
   line-height: 43px;
-  font-weight: 700;
+  font-weight: bold;
   margin: 0;
 }
 .price-card__title-p {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -95,27 +96,26 @@ html {
   width: 380px;
   color: #fff;
 }
-.price-card_options-list-ul {
+.price-card_options-list-item {
+  display: flex;
+  height: 50px;
   list-style-type: none;
   padding: 0;
 }
-.price-card_options-list-ul-li:nth-child(odd) {
+.price-card_options-list-item-item:nth-child(odd) {
   background: #2A3438;
   mix-blend-mode: normal;
 }
-.price-card_options-list-ul-li {
-  display: flex;
-  height: 50px;
-}
-.price-card_options-list-ul-li-img {
-  margin: 18px 0px 19px 22px;
-}
-.price-card_options-list-ul-li-text {
+.price-card_options-list-item-text {
   margin: 16px 22px;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   color: #fff;
+}
+
+.checkmark {
+  margin: 18px 0px 19px 22px;
 }
 
 .price-card__order-btn {

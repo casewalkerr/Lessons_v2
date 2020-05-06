@@ -30,12 +30,14 @@ html {
         &-h1 {
             font-size: 35px;
             line-height: 43px;
-            font-weight: 700;
+
+            font-weight: bold;
             margin: 0;
         }
         &-p {
             font-size: 20px;
             line-height: 24px;
+            font-weight: 300;
             margin: 0;
         }
     }    
@@ -86,29 +88,28 @@ html {
     height: 300px;
     width: 380px;
     color: #fff;
-    &-ul {
+    &-item {
+        display: flex;
+        height: 50px;
         list-style-type: none;
         padding: 0;
-        &-li:nth-child(odd){
+        &-item:nth-child(odd){
             background: #2A3438;
             mix-blend-mode: normal;
             // opacity: 0.5;
         }
-        &-li {
-            display: flex;
-            height: 50px;
-            &-img {
-                margin: 18px 0px 19px 22px;
-            }
-            &-text {
-                margin: 16px 22px;
-                font-weight: 300;
-                font-size: 15px;
-                line-height: 18px;
-                color: #fff;
-            }
+         &-text {
+            margin: 16px 22px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            color: #fff;
         }
+        
     }
+}
+.checkmark {
+    margin: 18px 0px 19px 22px;
 }
 .price-card__order-btn {
     width: 155px;

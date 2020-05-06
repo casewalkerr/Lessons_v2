@@ -26,7 +26,7 @@ html {
     height: 770px;
     background-color: #334247;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
-    margin: 115px 9px 115px 9px;
+    margin: 0px 9px 0px 9px;
     color: #fff;
     &__title {
         margin: 33px 0px 0px 0px;
@@ -92,6 +92,9 @@ html {
         height: 50px;
         list-style-type: none;
         padding: 0;
+        .checkmark {
+            margin: 18px 0px 19px 22px;
+        }
          &-text {
             margin: 16px 22px;
             font-weight: 300;
@@ -104,15 +107,23 @@ html {
 li:nth-child(odd) {
     background-color: #2A3438;
 }
-.checkmark {
-    margin: 18px 0px 19px 22px;
-}
+
 .price-card__order-btn {
     width: 155px;
     height: 40px;
     border-radius: 20px;
     margin: 39px 113px 40px 112px;
     border: none;
+    &.green {
+        background-color: #5BB189;
+    }
+    &.blue {
+        background-color: #3A6BA5;
+    }
+    &.orange {
+        background-color: #EC632A;
+    }
+    
     &-text {
         font-style: normal;
         font-weight: normal;
@@ -137,7 +148,6 @@ li:nth-child(odd) {
     top: 31px;
     right: -30px;
     &-text {
-        position: absolute;
         font-size: 14px;
         line-height: 17px;
         width: 76px;
@@ -149,13 +159,4 @@ li:nth-child(odd) {
         font-weight: bold;
         text-transform: uppercase;
     }
-}
-.price-card__order-btn.green {
-    background-color: #5BB189;
-}
-.price-card__order-btn.blue {
-    background-color: #3A6BA5;
-}
-.price-card__order-btn.orange {
-    background-color: #EC632A;
 }

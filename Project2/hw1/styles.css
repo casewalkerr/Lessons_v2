@@ -6,10 +6,18 @@ html {
   font-family: Montserrat, sans-serif;
 }
 
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .price-tables {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1400px;
+  height: 1000px;
   background: #141B1C;
 }
 

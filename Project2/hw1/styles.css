@@ -78,7 +78,7 @@ html {
   margin: 40px 26px 40px 26px;
 }
 
-.price-card_options-list {
+.price-card__options-list {
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -87,13 +87,13 @@ html {
   margin: 0;
   padding: 0;
 }
-.price-card_options-list-item {
+.price-card__options-list-item {
   display: flex;
   height: 50px;
   list-style-type: none;
   padding: 0;
 }
-.price-card_options-list-item-text {
+.price-card__options-list-item-text {
   margin: 16px 22px;
   font-weight: 300;
   font-size: 15px;

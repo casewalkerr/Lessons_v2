@@ -88,16 +88,12 @@ html {
     height: 300px;
     width: 380px;
     color: #fff;
+    padding: 0;
     &-item {
         display: flex;
         height: 50px;
         list-style-type: none;
         padding: 0;
-        &-item:nth-child(odd){
-            background: #2A3438;
-            mix-blend-mode: normal;
-            // opacity: 0.5;
-        }
          &-text {
             margin: 16px 22px;
             font-weight: 300;
@@ -107,6 +103,9 @@ html {
         }
         
     }
+}
+li:nth-child(odd) {
+    background-color: #2A3438;
 }
 .checkmark {
     margin: 18px 0px 19px 22px;

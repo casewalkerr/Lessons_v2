@@ -95,6 +95,7 @@ html {
   height: 300px;
   width: 380px;
   color: #fff;
+  padding: 0;
 }
 .price-card_options-list-item {
   display: flex;
@@ -102,16 +103,16 @@ html {
   list-style-type: none;
   padding: 0;
 }
-.price-card_options-list-item-item:nth-child(odd) {
-  background: #2A3438;
-  mix-blend-mode: normal;
-}
 .price-card_options-list-item-text {
   margin: 16px 22px;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   color: #fff;
+}
+
+li:nth-child(odd) {
+  background-color: #2A3438;
 }
 
 .checkmark {

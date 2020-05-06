@@ -24,7 +24,7 @@ html {
   height: 770px;
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
-  margin: 0px 9px 0px 9px;
+  margin: 115px 9px 115px 9px;
   color: #fff;
 }
 .price-card__title {
@@ -48,6 +48,7 @@ html {
   height: 105px;
   width: 380px;
   margin-top: 33px;
+  background-color: #5BB189;
 }
 .price-card__price-text {
   color: #fff;
@@ -57,6 +58,12 @@ html {
   font-size: 55px;
   line-height: 67px;
   font-style: normal;
+}
+.price-card .blue {
+  background-color: #3A6BA5;
+}
+.price-card .orange {
+  background-color: #EC632A;
 }
 
 .price-card__description {
@@ -144,18 +151,6 @@ li:nth-child(odd) {
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.price-card__price.green {
-  background-color: #5BB189;
-}
-
-.price-card__price.blue {
-  background-color: #3A6BA5;
-}
-
-.price-card__price.orange {
-  background-color: #EC632A;
 }
 
 .price-card__order-btn.green {

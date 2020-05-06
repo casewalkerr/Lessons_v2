@@ -10,15 +10,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 1400px;
   height: 1000px;
   background: #141B1C;
 }
 
 .price-card {
-  display: flex;
   position: relative;
+  display: flex;
   overflow: hidden;
   flex-direction: column;
   width: 380px;
@@ -59,6 +58,7 @@ html {
   font-weight: bold;
   font-size: 55px;
   line-height: 67px;
+  font-style: normal;
 }
 
 .price-card__price.green {

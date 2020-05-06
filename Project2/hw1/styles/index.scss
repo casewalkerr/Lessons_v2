@@ -11,7 +11,6 @@ html {
     width: 1400px;
     height: 1000px;
     background: #141B1C;
-    margin-top: 55px;
 }
 .price-card {
     position: relative;
@@ -24,7 +23,6 @@ html {
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
     margin: 0px 9px 0px 9px;
     color: #fff;
-    text-align: center;
     &__title {
         margin: 33px 0px 0px 0px;
         text-align: center;
@@ -68,6 +66,7 @@ html {
     font-size: 15px;
     line-height: 18px;
     color: #FFF;
+    margin: 40px 26px 40px 26px;
 }
 .price-card_options-list {
     display: flex;

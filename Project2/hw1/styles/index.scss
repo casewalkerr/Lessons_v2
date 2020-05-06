@@ -11,6 +11,7 @@ html {
     width: 1400px;
     height: 1000px;
     background: #141B1C;
+    margin-top: 55px;
 }
 .price-card {
     position: relative;
@@ -21,7 +22,7 @@ html {
     height: 770px;
     background-color: #334247;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
-    margin: 9px;
+    margin: 0px 9px 0px 9px;
     color: #fff;
     text-align: center;
     &__title {
@@ -57,20 +58,12 @@ html {
         font-style: normal;
     }
 }
-.price-card__price.green {
-    background-color: #5BB189;
-}
-.price-card__price.blue {
-    background-color: #3A6BA5;
-}
-.price-card__price.orange {
-    background-color: #EC632A;
-}
+
 .price-card__description {
-    margin: 40px 26px 0px 26px;
+    margin-top: 40px;
     text-align: center;
     height: 36px;
-    width: 326px;
+    width: 327px;
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
@@ -79,11 +72,10 @@ html {
 .price-card_options-list {
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-top: 40px;
     height: 300px;
     width: 380px;
     color: #fff;
+    margin: 0;
     padding: 0;
     &-item {
         display: flex;
@@ -110,8 +102,8 @@ li:nth-child(odd) {
     width: 155px;
     height: 40px;
     border-radius: 20px;
-    margin: 39px 113px 20px 112px;
-    border: 0;
+    margin: 39px 113px 40px 112px;
+    border: none;
     &-text {
         font-style: normal;
         font-weight: normal;
@@ -121,15 +113,7 @@ li:nth-child(odd) {
         color: #FFF;
     }
 }
-.price-card__order-btn.green {
-    background-color: #5BB189;
-}
-.price-card__order-btn.blue {
-    background-color: #3A6BA5;
-}
-.price-card__order-btn.orange {
-    background-color: #EC632A;
-}
+
 .price-card-popular {
     display: flex;
     align-items: center;
@@ -160,4 +144,22 @@ li:nth-child(odd) {
         
     }
 }
+.price-card__price.green {
+    background-color: #5BB189;
+}
+.price-card__price.blue {
+    background-color: #3A6BA5;
+}
+.price-card__price.orange {
+    background-color: #EC632A;
+}
 
+.price-card__order-btn.green {
+    background-color: #5BB189;
+}
+.price-card__order-btn.blue {
+    background-color: #3A6BA5;
+}
+.price-card__order-btn.orange {
+    background-color: #EC632A;
+}

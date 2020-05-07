@@ -4,7 +4,7 @@ function checher(arr){
     }
     let minValue = Math.min.apply(null, arr);
     let maxValue = Math.max.apply(null, arr);
-    let sumValue = (minValue + maxValue) > 1000;
-    return sumValue;
+    let sumValue = (minValue + maxValue);
+    return sumValue > 1000;
 }
-console.log(checher([34,1333,23,1]));
+console.log(checher([34,1213,23,1]));

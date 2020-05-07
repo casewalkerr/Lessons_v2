@@ -1,4 +1,4 @@
-function checher(arr){
+function checker(arr){
     if(!Array.isArray(arr)){
         return null;
     }
@@ -7,4 +7,4 @@ function checher(arr){
     let sumValue = minValue + maxValue;
     return (sumValue > 1000);
 }
-console.log(checher([34,2113,23,1]));
+console.log(checker([34,2113,23,1]));

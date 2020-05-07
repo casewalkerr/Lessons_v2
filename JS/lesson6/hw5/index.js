@@ -10,8 +10,8 @@ function reverseArray(arr){
     if(!Array.isArray(arr)){
         return null;
     }
-    reverseA = [];
-   for(let i =arr.length-1; i>0; i--){
+     let reverseA = [];
+   for(let i = arr.length-1; i > 0; i--){
        reverseA.push(arr[i]);
    }
     return reverseA;

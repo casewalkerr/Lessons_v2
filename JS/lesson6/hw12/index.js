@@ -1,7 +1,7 @@
-function uniqueCount(array){
+function removeDuplicates(array){
     if(!Array.isArray(array))
     return null;
-    const uniqueS = [...new Set(array)];
-    return uniqueS.length;
+    let uniqueSet = [...new Set(array)];
+    return uniqueSet;   
 }
-console.log(uniqueCount([3,5,67,4,4,3,76,34,6]));
+console.log(removeDuplicates([23,2,76,5,4,23,5]));

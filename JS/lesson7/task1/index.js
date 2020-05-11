@@ -11,6 +11,7 @@ console.log(getSpecialNumbers([3, 5, 6, 4, 14, 56]));
 //     }
 // //     return specialNumbers;
 // // }
+
 // const getSpecialNumbers = numbers => {
 //         let specialNumbers = [];
 //        numbers.forEach(num => {

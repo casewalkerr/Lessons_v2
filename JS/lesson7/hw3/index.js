@@ -1,4 +1,4 @@
-const increaseEvenEI =(arr, delta) => {
+const increaseEvenEl =(arr, delta) => {
     if(!Array.isArray(arr))
     return null;
     return arr.map(num => {

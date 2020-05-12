@@ -7,4 +7,4 @@ const increaseEvenEl =(arr, delta) => {
         return num;
     })
 }
-console.log(increaseEvenEI([4,5,2,3,5], 12));
+console.log(increaseEvenEl([4,5,2,3,5], 12));

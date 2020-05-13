@@ -1,10 +1,10 @@
 const mergeObjectsV1 = (obj1, obj2) =>{
-  let concatObj = Object.assign(obj1, obj2)
+  let concatObj = Object.assign({}, obj1, obj2)
   return concatObj;
 }
 
 const mergeObjectsV2 = (obj1, obj2) =>{
-  let concatObj = Object.assign(obj2, obj1);
+  let concatObj = Object.assign({}, obj2, obj1);
   return concatObj;
 }
 

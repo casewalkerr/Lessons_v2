@@ -12,10 +12,10 @@ user[anotherKey] = false;
 /* присвойте объекту свойство 'favorite music' со значением 'rock' */
 user['favorite music'] = 'rock';
 /* присвойте объекту свойство 'address', которое будет пустым объкетом */
-user.adress = {};
+user.address = {};
 /* присвойте объекту в 'address' свойство 'country', со значением 'Ukraine' */
-user.adress.country = 'Ukraine';
+user.address.country = 'Ukraine';
 /* присвойте объекту в 'address' свойство 'building', со значением 17 */
-user.adress.building = 17;
+user.address.building = 17;
 /* выведите в консоль объект user */
 console.log(user);

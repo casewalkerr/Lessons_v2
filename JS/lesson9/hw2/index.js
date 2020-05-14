@@ -1,7 +1,7 @@
 // input: obj;
 // output: arr;
 
-rooms = {
+ const rooms = {
     room1:[
         {name: 'room1 name1'},
         {name: 'room1 name2'},

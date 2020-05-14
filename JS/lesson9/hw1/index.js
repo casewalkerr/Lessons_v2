@@ -10,7 +10,7 @@ const customers = {
         age: 17,
     },
 };
-const getCustomersList = obj => 
+const getPeople = obj => 
     Object.entries(obj).map(([id, value])=> ({id,...value}))
     .sort((a, b) => a.age -b.age);
     

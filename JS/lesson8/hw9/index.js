@@ -1,14 +1,15 @@
-const pockProps = (obj, arr) => {
+// input: obj, arr;
+// output: obj;
+const pickProps = (obj, arr) =>{
   let newObj = {};
   arr.forEach(element => {
     newObj[element] = obj[element];
   });
- return newObj;
-}
-
+  return newObj;
+};
 const obj = {
   a: 1,
-  b: 2,
-  c: 3,
-}
-console.log(pockProps(obj, ['a', 'c']));
+  b: 3,
+  c: 5,
+};
+console.log(pickProps(obj, ['a', 'b']));

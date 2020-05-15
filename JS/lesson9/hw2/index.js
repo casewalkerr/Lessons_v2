@@ -1,6 +1,8 @@
 // input: obj;
 // output: arr;
-
+//    1 обьект преобразить в массив со значениями
+//    2 массив сделать плоским
+//    3 списко сделать массивом
  const rooms = {
     room1:[
         {name: 'room1 name1'},
@@ -17,7 +19,8 @@
         {name: 'room3 name3'},
     ],
 };
-const getPeople = obj => 
-    Object.values(obj).flat().map(obj => obj.name)
+
+const getPeople = obj =>
+    Object.values(obj).flat().map((elem) => (elem.name))
 
 console.log(getPeople(rooms));

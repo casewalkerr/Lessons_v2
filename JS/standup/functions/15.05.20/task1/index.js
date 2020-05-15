@@ -19,17 +19,18 @@
 function isPrime(num){
     for(let i = 2; i < num; i++){
         // console.log("check for: " + i);
-        if(num % i ===0){
+        if(num % i === 0){
             // console.log("if is called for: " + i);
             return false;
         }
     }
     // console.log("loop is finished: " + i);
- return true;
+       return true;
 }
 
+
 function getPrimes (n) {
-    for (let i=1; i<=n; i++){
+    for (let i= 1; i <= n; i++){
         if(isPrime(i)){
             console.log(i);
         }

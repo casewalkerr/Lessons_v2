@@ -14,7 +14,7 @@ const customers = {
     },
 };
 const getCustomersList = obj => 
-    Object.entries(obj).map(([id]) => ({id})).
+    Object.entries(obj).map(([id, value]) => ({id, ...value})).
     sort((a,b) => a.age -b.age);
     
     console.log(getCustomersList(customers));

@@ -11,4 +11,4 @@ const getMaxAbsoluteNumber = arr => {
     return Math.max(...absoluteValues);
 }
 
-console.log(getMaxAbsolulteNumber([3, -434.4, 5.5, -6, 7]));
+console.log(getMaxAbsoluteNumber([3, -434.4, 5.5, -6, 7]));

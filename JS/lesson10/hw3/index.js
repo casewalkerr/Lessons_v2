@@ -1,8 +1,7 @@
 // input: num;
 // output: arr;
-// 1 округлить числа до n 
-// 2  вернуть массив из 5 элементов метод  map
-// 3 вернуть массив заданой длины
+// 1 округлить числа до numCount 
+// 2 вернуть массив 
 const superRound = (num, numCount) =>  [
     Math.floor(num * numCount) / numCount,
     Math.round(num * numCount) / numCount,

@@ -9,4 +9,4 @@ const superRound = (num, numCount) =>  [
     Math.trunc(num * numCount) / numCount,
     +num.toFixed(numCount)
 ]
-console.log(superRound(2.4555, 3));
+console.log(superRound(2.4555, 2));

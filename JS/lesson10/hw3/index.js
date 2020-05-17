@@ -2,11 +2,18 @@
 // output: arr;
 // 1 округлить числа до numCount 
 // 2 вернуть массив 
+// const superRound = (num, n) => [
+//     Math.floor(num * (10 ** n)) / (10 ** n),
+//     Math.round(num * (10 ** n)) / (10 ** n),
+//     Math.ceil(num * (10 ** n)) / (10 ** n),
+//     Math.trunc(num * (10 ** n)) / (10 ** n),
+//     +num.toFixed(n),
+// ];
 const superRound = (num, n) => [
-    Math.floor(num * (n * 100)) / (n * 100),
-    Math.round(num * (n * 100)) / (n * 100),
-    Math.ceil(num * (n * 100)) / (n * 100),
-    Math.trunc(num * (n * 100)) / (n * 100),
+    Math.floor(num * Math.pow(10, n)) / Math.pow(10, n),
+    Math.round(num * Math.pow(10, n)) / Math.pow(10, n),
+    Math.ceil(num * Math.pow(10, n)) / Math.pow(10, n),
+    Math.trunc(num * Math.pow(10, n)) / Math.pow(10, n),
     +num.toFixed(n),
-]
-console.log(superRound(2.18386, 2));
+];
+console.log(superRound(4.8376543, 5));

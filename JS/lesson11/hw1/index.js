@@ -5,19 +5,17 @@
 // 3 дополняем последнюю подстроку точками до нужного количества символов в подстроке
 const splitString =(str,len =10) => {
     if(typeof str !== 'string') return null;
-    const splitStr = [];
+    const splitArr = [];
     let start = 0;
-    while(true){
+    while(true) {
         let split = str.substr(start, len);
-        if(split.length === 0) {
-            break;
-        }
+        if(split.length === 0) break;
         if(split.length < len) {
-            split += '.'.repeat(len - split.length);
+            split += '.'.repeat( len - split.length );
         }
-        splitStr.push(split);
         start += len;
-    };
-    return splitStr;
+        splitArr.push(split);
+    }
+    return splitArr;
 }
 console.log(splitString('3fwettfwaefsfdfкккef3', 5));

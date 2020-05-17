@@ -4,7 +4,7 @@
 // 2 отсортировать массив по имени и по возрастанию сравнить строки методомlocalCompare
 // 3 отортировать массив по возр и убивы если у isAsc = true or false
 
-contacts = [
+ let contacts = [
     {
         name: 'Tom',
         phoneNumber: '666-66-66',

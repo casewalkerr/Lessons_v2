@@ -5,3 +5,8 @@ export const getMinSquaredNumber = arr => {
 }
 
 // console.log(getMinSquaredNumber([4,-65, 5, 777]));
+
+
+
+
+

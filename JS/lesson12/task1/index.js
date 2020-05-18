@@ -18,5 +18,6 @@ const calc = expresion => {
             result = a / b;
             break;
     }
-    return `${expresion} + ' = ' + ${result}`;
+    return `${expresion}  =  ${result}`;
 }
+console.log(calc('34 / 2'))

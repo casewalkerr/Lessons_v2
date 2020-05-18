@@ -6,4 +6,4 @@ const countOccurrences = (str,substr) => {
     if(substr == '') return null;
     return str.split(substr).length -1;
 }
-console.log(countOccurences('32fasdfwfffae', 'f'));
+console.log(countOccurrences('32fasdfwfffae', 'f'));

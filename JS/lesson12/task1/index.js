@@ -20,4 +20,4 @@ const calc = expresion => {
     }
     return `${expresion}  =  ${result}`;
 }
-console.log(calc('34 / 2'))
+// console.log(calc('34 * 2'));

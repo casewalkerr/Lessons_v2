@@ -7,7 +7,7 @@
 
     function sendMessage(name){
         
-        console.log(`${name}, ${message}! Your ${sender}`);
+        console.log(`${name}, ${message} Your ${sender}`);
     }
     function setMessage(text) {
         message = text;

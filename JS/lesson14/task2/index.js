@@ -5,11 +5,11 @@
     let massage = 'Just learn it';
     let sender = 'Gromcode';
 
-    function sendMessage (name){
+    function sendMessage(name){
         const sender = 'Gromcode';
         console.log(`${name}, ${massage}! Your ${sender}`);
     }
-    function setMessage (text) {
+    function setMessage(text) {
         massage = text;
     }
     function setSender(text) {

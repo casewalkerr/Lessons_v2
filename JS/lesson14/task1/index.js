@@ -1,17 +1,17 @@
 // 'use strict';
 
 let massage = 'Just learn it';
-export const sendMessage = (name) =>{
+export function sendMessage (name){
     const sender = 'Gromcode';
     console.log(`${name}, ${massage}! Your ${sender}`);
 }
 sendMessage('Ann');
 
-const setMessage = text => {
+function setMessage (text) {
     massage = text;
 }
-setMessage('Good job');
-sendMessage('Ann');
+// setMessage('Good job');
+// sendMessage('Ann');
 
 // another.js
 // import {sendMessage} from 'index.js'

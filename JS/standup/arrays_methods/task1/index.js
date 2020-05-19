@@ -23,7 +23,7 @@ console.log("afrter" + numbersList)
 // выведите numbersList в консоль
 
 console.log("before" + numbersList)
-let res2 = numbersList.push(6);
+
 let res3 = numbersList.push(11);
 
 console.log(res3);
@@ -36,9 +36,9 @@ console.log("afrter" + numbersList)
 // выведите эту переменную в консоль
 
 console.log("before" + numbersList)
-let res5 = numbersList.unshift(100);
+let res4 = numbersList.shift(1);
 
-console.log(res5);
+console.log(res4);
 console.log("afrter" + numbersList);
 
 
@@ -48,9 +48,9 @@ console.log("afrter" + numbersList);
 // выведите numbersList в консоль
 
 console.log("before" + numbersList)
-let res4 = numbersList.shift(6);
+let res5 = numbersList.unshift(100);
 
-console.log(res4);
+console.log(res5);
 console.log("afrter" + numbersList);
 
 
@@ -90,7 +90,12 @@ console.log("after" + squaredNumbers);
 
 
 console.log("before" + squaredNumbers)
-
+// let callback = function() {
+//     if (el > 100) {
+//         return true;
+//     } else
+//         return false;
+// }
 
 const filtered = squaredNumbers.filter((el) => el % 2 === 0);
     

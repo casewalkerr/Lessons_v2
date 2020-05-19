@@ -7,7 +7,7 @@ export function sendMessage (name){
 }
 sendMessage('Ann');
 
-function setMessage (text) {
+export function setMessage (text) {
     massage = text;
 }
 // setMessage('Good job');

@@ -1,6 +1,6 @@
 // 'use strict';
 
-let massage = 'Just learn it!';
+let massage = 'Just learn it';
 export const sendMessage = (name) =>{
     const sender = 'Gromcode';
     console.log(`${name}, ${massage}! Your ${sender}`);

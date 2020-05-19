@@ -1,16 +1,16 @@
 // 'use strict';
 
 let massage = 'Just learn it!';
- const sendMessage = (name) =>{
+export const sendMessage = (name) =>{
     const sender = 'Gromcode';
     console.log(`${name}, ${massage}! Your ${sender}`);
 }
-sendMessage('Tom');
+sendMessage('Ann');
 
 const setMessage = text => {
     massage = text;
 }
-setMessage('God job');
+setMessage('Good job');
 sendMessage('Ann');
 
 // another.js

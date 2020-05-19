@@ -19,3 +19,6 @@ user.address.country = 'Ukraine';
 user.address.building = 17;
 /* выведите в консоль объект user */
 console.log(user);
+
+
+

@@ -22,7 +22,7 @@
     };
 };
 
-export default createMessenger;
+// export default createMessenger;
 
 const messenger1 = createMessenger();
 const messenger2 = createMessenger();

@@ -24,11 +24,11 @@
 
 export default createMessenger;
 
-const messenger1 = createMessenger();
-messenger1.sendMessage('Bob');
-const messenger2 = createMessenger();
-messenger2.setMessage('Good job');   //метод использующий сообщение 
-messenger1.sendMessage('Glen');
-messenger2.setMessage('Tom');
-const messenger3 = createMessanger();
-messenger3.sendMessage('Bob');
+// const messenger1 = createMessenger();
+// messenger1.sendMessage('Bob');
+// const messenger2 = createMessenger();
+// messenger2.setMessage('Good job');   //метод использующий сообщение 
+// messenger1.sendMessage('Glen');
+// messenger2.setMessage('Tom');
+// const messenger3 = createMessanger();
+// messenger3.sendMessage('Bob');

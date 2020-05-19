@@ -2,15 +2,15 @@
 
 
   const createMessenger = () => {
-    let massage = 'Just learn it';
+    let message = 'Just learn it';
     let sender = 'Gromcode';
 
     function sendMessage(name){
         
-        console.log(`${name}, ${massage}! Your ${sender}`);
+        console.log(`${name}, ${message}! Your ${sender}`);
     }
     function setMessage(text) {
-        massage = text;
+        message = text;
     }
     function setSender(text) {
         sender = text;
@@ -29,4 +29,3 @@ messenger1.sendMessage('Bob');
 const messenger2 = createMessenger();
 messenger2.setMessage('Good job');   //метод использующий сообщение 
 messenger2.sendMessage('Glen');
-messenger2.setSender('Tom');

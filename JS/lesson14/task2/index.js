@@ -6,7 +6,7 @@
     let sender = 'Gromcode';
 
     function sendMessage(name){
-        const sender = 'Gromcode';
+        
         console.log(`${name}, ${massage}! Your ${sender}`);
     }
     function setMessage(text) {
@@ -29,3 +29,4 @@ messenger1.sendMessage('Bob');
 const messenger2 = createMessenger();
 messenger2.setMessage('Good job');   //метод использующий сообщение 
 messenger2.sendMessage('Glen');
+messenger2.setSender('Tom');

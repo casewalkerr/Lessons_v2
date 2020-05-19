@@ -26,10 +26,10 @@ export default createMessenger;
 
 const messenger1 = createMessenger();
 const messenger2 = createMessenger();
-const messenger3 = createMessenger();
+
 messenger1.sendMessage('Bob');
 messenger2.setMessage('Good job!');   //метод использующий сообщение 
 messenger2.sendMessage('Bob');
-messenger3.setSender('Tom');
-messenger3.sendMessage('Bob');
+
+
 

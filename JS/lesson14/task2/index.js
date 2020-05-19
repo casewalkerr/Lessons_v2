@@ -1,4 +1,4 @@
-// messenger
+
 
 
   const createMessenger = () => {
@@ -25,10 +25,10 @@
 export default createMessenger;
 
 const messenger1 = createMessenger();
-messenger1.sendMessage('Bob');
 const messenger2 = createMessenger();
-messenger2.setMessage('Good job');   //метод использующий сообщение 
-messenger2.sendMessage('Glen');
-messenger2.setSender('Bob');
-messenger2.sendMessage('Glen');
+// messenger1.sendMessage('Bob');
+// messenger2.setMessage('Good job');   //метод использующий сообщение 
+// messenger2.sendMessage('Glen');
+// messenger2.setSender('Bob');
+// messenger2.sendMessage('Glen');
 

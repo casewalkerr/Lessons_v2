@@ -25,7 +25,7 @@ const createLogger = () => {
         },
         getRecords: type => {
             if(type === undefined) {
-                return memory;
+                return memory.sort(a,b => b.dateTime - a.dateTime);
             }
             else {
                 return   memory.filter(el => el.type === type).sort((a,b) => b.dateTime - a.dateTime);     

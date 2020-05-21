@@ -36,7 +36,7 @@ const createLogger = () => {
         
      }
 } 
-// export {createLogger}
+export {createLogger}
 const logger = createLogger();
 logger.log('User logged in');
 logger.warn('User try to restricted page');

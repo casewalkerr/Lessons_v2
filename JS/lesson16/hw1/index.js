@@ -1,6 +1,6 @@
 
 
-const createArreyOfFunction = num => {
+export const createArreyOfFunction = num => {
     let arr = [];
     if( num === undefined) return [];
     if(typeof num !== 'number') return null;

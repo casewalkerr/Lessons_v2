@@ -1,5 +1,5 @@
 'use strict';
-const wallet = {
+ export const wallet = {
     transactions: [2, 5, 65, 76, 44],
     getMax(){
         // return Math.max.apply(null, this.transactions)

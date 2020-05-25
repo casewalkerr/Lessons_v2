@@ -13,8 +13,8 @@ export const timer = {
         },1000)
     },
     getTime() {
-        return ` ${this.secondsPassed}:${this.minsPassed < 10 ?
-        '0' + this.minsPassed: this.minsPassed}`
+        return `${this.minsPassed}:${this.secondsPassed < 10 ?
+        '0' + this.secondsPassed: this.secondsPassed}`
     },
     stopTimer() {
         clearInterval(this.countTimer);

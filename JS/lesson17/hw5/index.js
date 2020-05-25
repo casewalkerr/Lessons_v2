@@ -5,6 +5,7 @@ export const timer = {
     countTimer: 0,
     startTimer() {
         this.countTimer = setInterval(()=>{
+            this.secondsPassed++;
             if(this.secondsPassed == 60){
                 this.minsPassed++
                 this.secondsPassed = 0;

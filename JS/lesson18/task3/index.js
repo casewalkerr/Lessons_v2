@@ -8,3 +8,4 @@ function sumOfSquares() {
 };
 
 console.log(sumOfSquares(4, 6, 78, 34));
+export {sumOfSquares}

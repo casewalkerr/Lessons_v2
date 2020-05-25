@@ -18,7 +18,7 @@
 //   return numbers.reduce((acc, el) => acc * el);
 // }
 
-function multiply2() {
+function multiply() {
     let args = arguments;
     console.log(args); 
   return [...args].reduce((acc, el) => acc * el);

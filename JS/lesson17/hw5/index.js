@@ -1,5 +1,5 @@
 
-const timer = {
+export const timer = {
     secondsPassed: 0,
     minsPassed: 0,
     countTimer: 0,

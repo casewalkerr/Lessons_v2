@@ -2,7 +2,7 @@
 
 // input: function
 // output: function witch saves all calls and contecst 
- export function saveCalles (func) {
+ export function saveCalls (func) {
     withMemory.calls = [];
     function withMemory (...args){
         withMemory.calls.push([...args]);
@@ -16,7 +16,7 @@
 //     return Math.sqrt(a * a + b * b);
 // }
 
-// const testWithMemory = saveCalles(test);
+// const testWithMemory = saveCalls(test);
 // testWithMemory(4, 2);
 // testWithMemory(9, 1);
 
@@ -31,7 +31,7 @@
 //     }
 // };
 
-// const methodWithMemory = saveCalles(user.sayHi);
+// const methodWithMemory = saveCalls(user.sayHi);
 
 // console.log(methodWithMemory.apply({name:'Tom'})); // 'Tom'
 

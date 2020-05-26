@@ -13,11 +13,11 @@ function addPropertyV3(userData, userId) {
     
     return Object.assign({}, userData, {id: userId})
 }
-function addPropertyV4(userData, { id: userId}) {
+function addPropertyV4(userData, userId) {
 //    how to copy obj
     // let resObj = {...userData};
     // let resObj = Object.assign({}, userData)
-    let resObj = {...userData, id:userId};
+    let resObj = {...userData, id: userId};
     return resObj;
 }
 

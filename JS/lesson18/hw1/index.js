@@ -2,7 +2,7 @@
 
 // input: function
 // output: function witch saves all calls and contecst 
-function saveCalles (func) {
+ export function saveCalles (func) {
     withMemory.calls = [];
     function withMemory (...args){
         withMemory.calls.push([...args]);
@@ -12,29 +12,28 @@ function saveCalles (func) {
 }
 
 
-function test (a,b) {
-    return Math.sqrt(a * a + b * b);
-}
+// function test (a,b) {
+//     return Math.sqrt(a * a + b * b);
+// }
 
-const testWithMemory = saveCalles(test);
-testWithMemory(4, 2);
-testWithMemory(9, 1);
+// const testWithMemory = saveCalles(test);
+// testWithMemory(4, 2);
+// testWithMemory(9, 1);
 
 
-console.log(testWithMemory.calls) //[[4, 2], [9, 1]]
-/* Поддержка функции с контекстом */
+// console.log(testWithMemory.calls) //[[4, 2], [9, 1]]
+// /* Поддержка функции с контекстом */
 
-const user = {
-    name: 'john',
-    sayHi(){
-        return this.name
-    }
-};
+// const user = {
+//     name: 'john',
+//     sayHi(){
+//         return this.name
+//     }
+// };
 
-const methodWithMemory = saveCalles(user.sayHi);
+// const methodWithMemory = saveCalles(user.sayHi);
 
-console.log(methodWithMemory.apply({name:'Tom'})); // 'Tom'
+// console.log(methodWithMemory.apply({name:'Tom'})); // 'Tom'
 
-console.log(methodWithMemory.calls); // [[]]
+// console.log(methodWithMemory.calls); // [[]]
 
-export {saveCalles}

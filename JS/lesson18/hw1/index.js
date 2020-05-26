@@ -36,4 +36,5 @@ const methodWithMemory = saveCalles(user.sayHi);
 console.log(methodWithMemory.apply({name:'Tom'})); // 'Tom'
 
 console.log(methodWithMemory.calls); // [[]]
+
 export {saveCalles}

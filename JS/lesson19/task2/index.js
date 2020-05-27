@@ -23,3 +23,4 @@ function getOwnProps (obj) {
 console.log(getOwnProps(ship))
 console.log(Object.keys(ship));
 
+export {getOwnProps}

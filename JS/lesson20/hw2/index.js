@@ -33,7 +33,7 @@ class UserRepository {
         return this._users.map(el => el.id)
     }
     getUserNameById(id) {
-        return this._users.filter(el => el.id == id).name
+        return this._users.find(el => el.id == id).name
     }
 }
 

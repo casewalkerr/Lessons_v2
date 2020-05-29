@@ -16,7 +16,7 @@ export class Order {
         return false;
     }
 
-    confirOrder() {
+    confirmOrder() {
         this.isConfirmed = true;
         this.dateCreated = new Date;
     }
@@ -29,5 +29,5 @@ export class Order {
     }
 }
 
-const order = new Order(2000, 'Tokio', 'Buy');
-console.log(order);
+// const order = new Order(2000, 'Tokio', 'Buy');
+// console.log(order);

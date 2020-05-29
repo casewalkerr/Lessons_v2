@@ -1,11 +1,11 @@
 
-export class Order {
+class Order {
     constructor(price, city, type) {
         this.id = String(Math.random());
         this.price = price;
         this.dateCreated = new Date;
         this.isConfirmed = false;
-        this.dataConfirmed = new Date;
+        this.dataConfirmed = Date;
         this.city = city;
         this.type = type;
     }
@@ -19,7 +19,7 @@ export class Order {
 
     confirmOrder() {
         this.isConfirmed = true;
-        this.dataConfirmed = Date;
+        this.dataConfirmed = new Date;
     }
 
     isValidType(type) {
@@ -30,5 +30,5 @@ export class Order {
     }
 }
 
-// const order = new Order(2000, 'Tokio', 'Buy');
-// console.log(order);
+const order = new Order(2000, 'Tokio', 'Buy');
+console.log(order);

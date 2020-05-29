@@ -5,9 +5,9 @@ export class Order {
         this.price = price;
         this.dateCreated = new Date;
         this.isConfirmed = false;
+        this.dataConfirmed = Date;
         this.city = city;
         this.type = type;
-        this.dataConfirmed = Date;
     }
 
     checkPrice() {
@@ -19,7 +19,7 @@ export class Order {
 
     confirmOrder() {
         this.isConfirmed = true;
-        this.dataConfirmed = Date;
+        this.dataConfirmed = new Date;
     }
 
     isValidType(type) {

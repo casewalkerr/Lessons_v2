@@ -5,7 +5,7 @@ export class Order {
         this.price = price;
         this.dateCreated = new Date;
         this.isConfirmed = false;
-        this.dataConfirmed = Date;
+        this.dataConfirmed = new Date;
         this.city = city;
         this.type = type;
     }

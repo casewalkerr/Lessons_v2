@@ -29,7 +29,7 @@ class Ship extends Vehicle {
     }
 }
 
-const ship1 = new Ship('GG', 0, 43);
+const ship1 = new Ship('Argo', 0, 43);
 ship1.move();
 ship1.stop();
 console.log(ship1);

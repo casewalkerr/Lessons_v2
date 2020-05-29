@@ -39,4 +39,4 @@ class UserRepository {
 
 const user1 = new User('23', 'Case', '77')
 console.log(user1)
-
+export { User, UserRepository }

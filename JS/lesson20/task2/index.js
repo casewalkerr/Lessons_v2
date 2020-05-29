@@ -19,17 +19,17 @@ class Ship extends Vehicle {
         this.maxSpeed = maxSpeed; 
     }
     move() {
-        console.log(`${this.name} liftting anchor up`)
+        console.log(`${this.name} lifting anchor up`)
         super.move();
     }
 
     stop() {
         super.stop();
-        console.log(`${this.name} liftting anchor down`)
+        console.log(`${this.name} lifting anchor down`)
     }
 }
 
-const ship1 = new Ship('Argo', 0, 43);
+const ship1 = new Ship('GG', 0, 43);
 ship1.move();
 ship1.stop();
 console.log(ship1);

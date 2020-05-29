@@ -14,15 +14,23 @@ class Vehicle {
 }
 
 class Ship extends Vehicle {
+    constructor(name, numberOfWheels, maxSpeed){
+        super(name, numberOfWheels)
+        this.maxSpeed = maxSpeed; 
+    }
     move() {
         console.log(`${this.name} liftting anchor up`)
-        this.move();
+        super.move();
     }
 
     stop() {
-        this.stop();
+        super.stop();
         console.log(`${this.name} liftting anchor down`)
     }
 }
 
+const ship1 = new Ship('GG', 0, 43);
+ship1.move();
+ship1.stop();
+console.log(ship1);
 export { Vehicle, Ship}

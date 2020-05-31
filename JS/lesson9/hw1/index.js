@@ -4,7 +4,7 @@
 // 2 добавить id 
 // 3 отсортировать по возрасту
 const customers = {
-    'customer-id-1':{
+    'customer-id-1': {
         name: 'William',
         age: 54,
     },
@@ -13,8 +13,8 @@ const customers = {
         age: 17,
     },
 };
-const getCustomersList = obj => 
-    Object.entries(obj).map(([id, value]) => ({id, ...value})).
-    sort((a,b) => a.age -b.age);
-    
-    console.log(getCustomersList(customers));
+const getCustomersList = obj =>
+    Object.entries(obj).map(([id, value]) => ({ id, ...value })).
+        sort((a, b) => a.age - b.age);
+
+console.log(getCustomersList(customers));

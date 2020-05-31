@@ -5,13 +5,13 @@ const getTitleElement = () => {
     console.dir(titleElem);
     return titleElem;
 }
-const getinputElement = () => {
+const getInputElement = () => {
     const inputElem = document.querySelector('input[type = "text"]');
     console.dir(inputElem);
     return inputElem;
 }
 
-export { getTitleElement, getinputElement }
+export { getTitleElement, getInputElement }
 
 getinputElement();
 getTitleElement();

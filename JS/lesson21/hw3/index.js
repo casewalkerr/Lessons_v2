@@ -25,3 +25,4 @@ getTitle();
 getDescription();
 getPlans();
 getGoal();
+export { getTitle, getDescription, getPlans, getGoal }

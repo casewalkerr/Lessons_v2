@@ -13,5 +13,5 @@ const getInputElement = () => {
 
 export { getTitleElement, getInputElement }
 
-getinputElement();
+getInputElement();
 getTitleElement();

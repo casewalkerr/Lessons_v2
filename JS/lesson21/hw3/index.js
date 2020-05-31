@@ -21,8 +21,8 @@ const getGoal = () => {
     // console.log(getG.outerHTML);
     return getG.outerHTML;
 }
-getTitle();
-getDescription();
-getPlans();
-getGoal();
+// getTitle();
+// getDescription();
+// getPlans();
+// getGoal();
 export { getTitle, getDescription, getPlans, getGoal }

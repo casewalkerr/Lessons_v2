@@ -1,5 +1,5 @@
 
-export const finishList = () => {
+const finishList = () => {
     const listF = document.querySelector('.list');
     const listF2 = document.querySelector('.special');
     const elem1 = document.createElement('li');
@@ -15,4 +15,4 @@ export const finishList = () => {
     listF2.after(elem6);
     listF2.before(elem4);
 }
-finishList();
+// finishList();

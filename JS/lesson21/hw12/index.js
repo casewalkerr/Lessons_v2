@@ -14,7 +14,7 @@ export const getSection = num => {
 
 
 
-console.log(getSection(3));
+// console.log(getSection(3));
 
 
 

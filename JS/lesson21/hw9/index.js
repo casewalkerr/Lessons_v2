@@ -12,4 +12,4 @@ export const finishForm = () => {
     form.prepend(input);
 }
 
-finishForm();
+// finishForm();

@@ -16,10 +16,16 @@
 //     });
 
 // }
+const markAdmins = (users, adminIds) => {
+    return users.map(user => {
+        let isAdmin = adminIds.includes(user.id)
+        return { isAdmin, ...user }
+    })
+}
 
-
-const markAdmins = (users, adminIds) =>
-    users.map(user => ({ ...user, isAdmin: adminIds.includes(user.id) }));
+// const markAdmins = (users, adminIds) => {
+//     users.map( user => {let admin = adminIds.includes(user.id)})
+// }
 
 
 const adminIds = ['1', '3'];

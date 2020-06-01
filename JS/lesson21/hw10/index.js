@@ -1,5 +1,5 @@
 
-// const manageClasse = () => {
+// const manageClasses = () => {
 //     const classOne = document.querySelector('.one').classList.add('selected');
 //     const classTwo = document.querySelector('.two').classList.remove('selected');
 //     const classThree = document.querySelector('.three').classList.toggle('three_done');
@@ -8,7 +8,7 @@
 //         classFour.classList.add('another-class')
 //     }
 // }
-export const manageClasse = () => {
+export const manageClasses = () => {
     document.querySelector('.one').classList.add('selected');
     document.querySelector('.two').classList.remove('selected');
     document.querySelector('.three').classList.toggle('three_done');

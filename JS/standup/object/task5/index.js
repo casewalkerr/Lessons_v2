@@ -8,17 +8,17 @@
 //2. if they coincide, add to user object property isAdmin:true
 //3. if there are no coincides, thought isAdmin: false.
 
-function markAdmins(users, adminIds) {
-    return users.map(user => {
-        let isAdmin = adminIds.includes(user.id);
-        //  user.isAdmin = isAdmin;
-        return res = { ...user, isAdmin };;
-    });
+// function markAdmins1(users, adminIds) {
+//     return users.map(user => {
+//         let isAdmin = adminIds.includes(user.id);
+//         //  user.isAdmin = isAdmin;
+//         return res = { ...user, isAdmin };;
+//     });
 
-}
+// }
 
 
-const markAdmins1 = (users, adminIds) =>
+const markAdmins = (users, adminIds) =>
     users.map(user => ({ ...user, isAdmin: adminIds.includes(user.id) }));
 
 

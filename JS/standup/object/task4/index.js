@@ -5,7 +5,7 @@
 //  3 sort the array and return
 //  input object
 //  output Array
-function getCustomerList(obj) {
+function getCustomersList(obj) {
     return Object.entries(obj)
         .map(([id, object]) => ({ ...object, id }))
         .sort((a, b) => a.age - b.age);
@@ -35,4 +35,4 @@ const customers = {
     },
 };
 
-console.log(getCustomerList(customers));
+console.log(getCustomersList(customers));

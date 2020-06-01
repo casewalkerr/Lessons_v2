@@ -1,5 +1,6 @@
 
-const finishList = () => {
+
+export const finishList = () => {
     const listF = document.querySelector('.list');
     const listF2 = document.querySelector('.special');
     const elem1 = document.createElement('li');

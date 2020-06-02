@@ -22,11 +22,11 @@
 
 
 
-export function makeCounter() {
-    let counter = 0;
+function makeCounter() {
+    let counter = 10;
+    // let counter = 0;
     return function () {
         // Option 1
-        // let counter = 10;
         return counter++;
         //    // Option 2
         //    return ++counter;
@@ -36,14 +36,6 @@ export function makeCounter() {
 let counter1 = makeCounter();
 console.log(counter1());
 console.log(counter1());
-console.log(counter1());
-console.log(counter1());
-console.log(counter1());
-console.log(counter1());
+
 let counter2 = makeCounter();
-console.log(counter2());
-console.log(counter2());
-console.log(counter2());
-console.log(counter2());
-console.log(counter2());
 console.log(counter2());

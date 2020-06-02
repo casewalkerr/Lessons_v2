@@ -1,6 +1,6 @@
 const btn = document.querySelectorAll('.btn')
 // console.log(btn)
-const hahdleClick = () => {
+const hahdleClick = (event) => {
     console.log(event.target.textContent)
 }
 

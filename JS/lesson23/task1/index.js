@@ -4,7 +4,7 @@ const emaliErrorElem = document.querySelector('.error-text_email')
 const passwordErrorElem = document.querySelector('.error-text_password');
 
 const isRequired = value => value ? undefined : 'Required';
-const isEmail = value => value.includes('@') ? undefined : 'Shold be an email';
+const isEmail = value => value.includes('@') ? undefined : 'Should be an email';
 
 const validatorsByField = {
     email: [isRequired, isEmail],

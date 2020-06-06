@@ -22,20 +22,23 @@
 
 
 
-function makeCounter() {
-    let counter = 10;
-    // let counter = 0;
-    return function () {
-        // Option 1
-        return counter++;
-        //    // Option 2
-        //    return ++counter;
-    }
-}
+// function makeCounter() {
+//     let counter = 10;
+//     // let counter = 0;
+//     return function () {
+//         // Option 1
+//         return counter++;
+//         //    // Option 2
+//         //    return ++counter;
+//     }
+// }
 
-let counter1 = makeCounter();
-console.log(counter1());
-console.log(counter1());
+// let counter1 = makeCounter();
+// console.log(counter1());
+// console.log(counter1());
 
-let counter2 = makeCounter();
-console.log(counter2());
+// let counter2 = makeCounter();
+// console.log(counter2());
+
+
+

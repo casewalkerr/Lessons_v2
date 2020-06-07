@@ -11,6 +11,6 @@ export const getDiff = (startDate, EndDate) => {
     const difSeconds = Math.abs(start.getSeconds() - end.getSeconds())
     return `${difDays}d ${difHours}h ${difMinutes}m ${difSeconds}s`
 }
-const startDate = new Date(2031, 08, 20, 15, 34, 50)
-const EndDate = new Date(2019, 10, 07, 1, 34, 55);
-console.log(getDiff(startDate, EndDate))
+// const startDate = new Date(2031, 08, 20, 15, 34, 50)
+// const EndDate = new Date(2019, 10, 07, 1, 34, 55);
+// console.log(getDiff(startDate, EndDate))

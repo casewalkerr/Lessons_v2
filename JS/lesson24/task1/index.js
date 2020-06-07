@@ -5,5 +5,5 @@ const dayOfWeek = (date, days) => {
     return weekDays[new Date(futureInDate).getDay()];
 }
 
-const result = dayOfWeek(new Date(2020, 06, 13), 3);
-console.log(result)
+// const result = dayOfWeek(new Date(2020, 06, 13), 3);
+// console.log(result)

@@ -11,18 +11,22 @@
 // 6. create handler - create task object and put to the array and render tasks
 
 const tasks = [
-    { text: 'Buy milk', done: false, id: '1' },
-    { text: 'Pick up Tom from airport', done: false, id: '2' },
-    { text: 'Visit party', done: false, id: '3' },
-    { text: 'Visit doctor', done: true, id: '4' },
-    { text: 'Buy meat', done: true, id: '5' },
+    { text: 'Buy milk', done: false, id: '1', date: new Date(), doneDate: null },
+    { text: 'Pick up Tom from airport', done: false, id: '2', date: new Date(), doneDate: null },
+    { text: 'Visit party', done: false, id: '3', date: new Date(), doneDate: null },
+    { text: 'Visit doctor', done: true, id: '4', date: new Date(), doneDate: new Date() },
+    { text: 'Buy meat', done: true, id: '5', date: new Date(), doneDate: new Date() },
 ];
 const listElem = document.querySelector('.list');
 const renderTasks = (tasksList) => {
     listElem.innerHTML = '';
     const tasksElems = tasksList
         .slice()
-        .sort((a, b) => a.done - b.done)
+        .sort((a, b) => {
+            if (a.done !== b.done) return a.done - b.done
+            if (a.done) return new Date(b.doneDate) - new Date(a.doneDate)
+            return new Date(b.date) - new Date(a.date)
+        })
         .map((task) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
@@ -52,7 +56,9 @@ function createTask(event) {
     tasks.push({
         text: input.value,
         done: false,
-        id: `${tasks.length + 1}`
+        id: `${tasks.length + 1}`,
+        date: new Date(),
+        doneDate: null
     })
 
     input.value = '';
@@ -75,8 +81,16 @@ function updateTask(event) {
     // console.log(task)
     // task.done = true
     task.done = checkbox.checked;
+    task.doneDate = new Date()
+
     renderTasks(tasks);
 }
 
+
+// listElem.innerHTML = '';
+
+
+    // TODO update task
+    // TODO render tasks again
 
 

@@ -1,5 +1,5 @@
 // let secondsPassed = 10;
-export const timer = {
+const timer = {
     minsPassed: 0,
     secondsPassed: 0,
     intervalID: null,
@@ -23,12 +23,12 @@ export const timer = {
                 this.secondsPassed = 0;
             }
 
-            console.log('id ' + this.intervalID)
         }, 1000);
+        // console.log('id ' + this.intervalID)
     },
     getTimer() {
-        let secondsFormatted = this.secondsPassed < 10
-            ? `0${this.secondsPassed}`
+        let secondsFormatted = this.secondsPassed < 10 ?
+            `0${this.secondsPassed}`
             : this.secondsPassed;
 
         return `${this.minsPassed}: ${this.secondsFormatted} `;
@@ -39,11 +39,12 @@ export const timer = {
 
     },
     resetTimer() {
-
+        this.minsPassed = 0;
+        this.secondsPassed = 0;
     }
 
 }
-
+export { timer }
 
 // const user = {
 //     name: 'Andrey',

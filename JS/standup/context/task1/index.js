@@ -37,10 +37,8 @@ const timer = {
         this.secondsPassed = 0;
     },
     getTime() {
-        let secondsFormatted = this.secondsPassed < 10 ?
-            `0${this.secondsPassed}` :
-            this.secondsPassed
-        return `${this.minutesPassed}:${secondsFormatted}`
+        return `${this.minsPassed}:${this.secondsPassed < 10 ?
+            '0' + this.secondsPassed : this.secondsPassed}`
     },
 
 }

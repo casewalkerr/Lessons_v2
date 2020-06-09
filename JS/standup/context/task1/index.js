@@ -26,14 +26,8 @@ const timer = {
         }, 1000);
         // console.log('id ' + this.intervalID)
     },
-    getTimer() {
-        let secondsFormatted = this.secondsPassed < 10 ?
-            `0${this.secondsPassed}`
-            : this.secondsPassed;
 
-        return `${this.minsPassed}: ${this.secondsFormatted} `;
 
-    },
     stopTimer() {
         clearInterval(this.intervalID)
 
@@ -41,10 +35,17 @@ const timer = {
     resetTimer() {
         this.minsPassed = 0;
         this.secondsPassed = 0;
+    },
+    getTime() {
+        let secondsFormatted = this.secondsPassed < 10 ?
+            `0${this.secondsPassed}`
+            : this.secondsPassed;
+
+        return `${this.minsPassed}: ${this.secondsFormatted} `;
     }
 
 }
-export { timer }
+export { timer };
 
 // const user = {
 //     name: 'Andrey',

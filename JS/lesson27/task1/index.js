@@ -6,7 +6,7 @@ localStorage.setItem('age', JSON.stringify(17))
 export const getLocalStorageData = () => {
     return Object.entries(localStorage)
         .reduce((acc, [key, value]) => {
-            const newValue;
+            let newValue;
             try {
                 newValue = JSON.parse(value)
             } catch (e) {
@@ -19,4 +19,3 @@ export const getLocalStorageData = () => {
         }, {})
 }
 
-// console.log(getLocalStorage())

@@ -24,5 +24,5 @@ export const calc = initValue => {
     }
     return calculator;
 }
-const res = calc(4).add(3).div(4).result()
-console.log(res)
+// const res = calc(4).add(3).div(4).result()
+// console.log(res)

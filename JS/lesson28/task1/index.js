@@ -10,7 +10,7 @@ export const calc = initValue => {
         mult(value) {
             result *= value;
             return this;
-        }, substract(value) {
+        }, subtract(value) {
             result -= value;
             return this;
         },

@@ -1,6 +1,6 @@
 
 
-const shmoment = nowValue => {
+export const shmoment = nowValue => {
     let data = new Date(nowValue)
 
     const countTime = {
@@ -41,4 +41,4 @@ const shmoment = nowValue => {
 }
 
 
-console.log(shmoment(new Date(2088, 7, 7, 7, 7)).add('years', 5).substract('days', 3).result())
+// console.log(shmoment(new Date(2088, 7, 7, 7, 7)).add('years', 5).substract('days', 3).result())

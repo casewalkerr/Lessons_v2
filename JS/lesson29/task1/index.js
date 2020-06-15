@@ -27,7 +27,7 @@ export const addImage = (imgSrc, callback) => {
 
     imgElem.addEventListener('load', onImageloaded)
 
-    imgElem.addEventListener('error', () => ('Image loda failed'))
+    imgElem.addEventListener('error', () => ('Image load failed'))
 }
 const imgSrc = 'https://server.com/image.png';
 

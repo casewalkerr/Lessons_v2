@@ -7,7 +7,7 @@ export const shmoment = nowValue => {
         add(unit, value) {
             let addVal = {
                 milliseconds: (value) => (data.setMilliseconds(data.getMilliseconds() + value)),
-                seconds: (value) => (data.setMilliseconds(data.getSeconds() + value)),
+                seconds: (value) => (data.setSeconds(data.getSeconds() + value)),
                 minutes: (value) => (data.setMinutes(data.getMinutes() + value)),
                 hours: (value) => (data.setHours(data.getHours() + value)),
                 days: (value) => (data.setDate(data.getDate() + value)),
@@ -21,7 +21,7 @@ export const shmoment = nowValue => {
         subtract(unit, value) {
             let substVal = {
                 milliseconds: (value) => (data.setMilliseconds(data.getMilliseconds() - value)),
-                seconds: (value) => (data.setMilliseconds(data.getSeconds() - value)),
+                seconds: (value) => (data.setSeconds(data.getSeconds() - value)),
                 minutes: (value) => (data.setMinutes(data.getMinutes() - value)),
                 hours: (value) => (data.setHours(data.getHours() - value)),
                 days: (value) => (data.setDate(data.getDate() - value)),

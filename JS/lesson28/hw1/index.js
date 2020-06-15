@@ -6,12 +6,12 @@ export const shmoment = nowValue => {
     const countTime = {
         add(unit, value) {
             let addVal = {
-                miliseconds: (value) => (data.setMilliseconds(data.getMilliseconds() + value)),
+                milliseconds: (value) => (data.setMilliseconds(data.getMilliseconds() + value)),
                 seconds: (value) => (data.setMilliseconds(data.getSeconds() + value)),
                 minutes: (value) => (data.setMinutes(data.getMinutes() + value)),
                 hours: (value) => (data.setHours(data.getHours() + value)),
                 days: (value) => (data.setDate(data.getDate() + value)),
-                month: (value) => (data.setMonth(data.getMonth() + value)),
+                months: (value) => (data.setMonth(data.getMonth() + value)),
                 years: (value) => (data.setFullYear(data.getFullYear() + value))
             }
             data = new Date(addVal[unit](value))
@@ -20,12 +20,12 @@ export const shmoment = nowValue => {
         },
         subtract(unit, value) {
             let substVal = {
-                miliseconds: (value) => (data.setMilliseconds(data.getMilliseconds() - value)),
+                milliseconds: (value) => (data.setMilliseconds(data.getMilliseconds() - value)),
                 seconds: (value) => (data.setMilliseconds(data.getSeconds() - value)),
                 minutes: (value) => (data.setMinutes(data.getMinutes() - value)),
                 hours: (value) => (data.setHours(data.getHours() - value)),
                 days: (value) => (data.setDate(data.getDate() - value)),
-                month: (value) => (data.setMonth(data.getMonth() - value)),
+                months: (value) => (data.setMonth(data.getMonth() - value)),
                 years: (value) => (data.setFullYear(data.getFullYear() - value))
             }
             data = new Date(substVal[unit](value))

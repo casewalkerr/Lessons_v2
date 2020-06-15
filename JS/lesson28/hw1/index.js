@@ -1,6 +1,6 @@
 
 
-const shmoment = nowValue => {
+export const shmoment = nowValue => {
     let data = new Date(nowValue)
 
     const countTime = {

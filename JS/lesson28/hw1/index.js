@@ -1,6 +1,6 @@
 
 
-export const shmoment = nowValue => {
+const shmoment = nowValue => {
     let data = new Date(nowValue)
 
     const countTime = {
@@ -16,7 +16,7 @@ export const shmoment = nowValue => {
             }
             data = new Date(addVal[unit](value))
             // console.log(data)
-            return countTime;
+
         },
         subtract(unit, value) {
             let substVal = {
@@ -29,7 +29,7 @@ export const shmoment = nowValue => {
                 years: (value) => (data.setFullYear(data.getFullYear() - value))
             }
             data = new Date(substVal[unit](value))
-            return countTime;
+
 
         },
         result() {
@@ -41,4 +41,4 @@ export const shmoment = nowValue => {
 }
 
 
-// console.log(shmoment(new Date(2088, 7, 7, 7, 7)).add('years', 5).substract('days', 3).result())
+console.log(shmoment(new Date(2088, 7, 7, 7, 7)).add('years', 5).subtract('days', 3).result())

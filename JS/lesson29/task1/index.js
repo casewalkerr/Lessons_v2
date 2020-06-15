@@ -29,6 +29,7 @@ export const addImage = (imgSrc, callback) => {
 
     imgElem.addEventListener('error', () => ('Image loda failed'))
 }
+const imgSrc = 'https://server.com/image.png';
 
 const onImageLoaded = (error, data) => {
     if (error) {
@@ -39,4 +40,3 @@ const onImageLoaded = (error, data) => {
     const sizeElem = document.querySelector('.image=size');
     sizeElem.textContent = `${width} x ${height}`
 }
-const { width, height } = addImage(imgSrc, callback)

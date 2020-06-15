@@ -18,7 +18,7 @@ export const shmoment = nowValue => {
             // console.log(data)
             return countTime;
         },
-        substract(unit, value) {
+        subtract(unit, value) {
             let substVal = {
                 miliseconds: (value) => (data.setMilliseconds(data.getMilliseconds() - value)),
                 seconds: (value) => (data.setMilliseconds(data.getSeconds() - value)),

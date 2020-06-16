@@ -12,6 +12,6 @@ const user = {
         this.lastName = lastName;
     },
 }
-user.fullName ='Case Walker';
+user.fullName = 'Case Walker';
 console.log(user.fullName);
 export default user;

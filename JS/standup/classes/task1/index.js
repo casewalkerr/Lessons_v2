@@ -7,7 +7,7 @@ export function User(name, age) {
     this.name = name;
     this.age = age;
 }
-User.prototype.sayHi = function sayHi() {
+User.prototype.sayHi = function () {
     console.log(`Hi I am ${this.name}`)
 }
 User.prototype.requestNewPhoto = function () {
@@ -18,7 +18,7 @@ User.prototype.setAge = function (value) {
     if (value < 0) {
         return false;
     }
-    if (value > 25) {
+    if (value >= 25) {
         console.log(this)
         this.requestNewPhoto()
     }

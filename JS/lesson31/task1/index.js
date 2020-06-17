@@ -10,6 +10,7 @@ export const requestUserData = userId => {
                     name: 'John',
                     age: 17,
                     email: `${userId}@example.com`,
+                    userId
                 })
             }, 1000)
     })

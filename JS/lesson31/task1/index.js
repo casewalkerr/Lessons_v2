@@ -16,7 +16,7 @@ export const requestUserData = userId => {
     return request;
 }
 
-// requestUserData('Roman')
-//     .catch(error => console.log(error))
+requestUserData('Roman')
+    .catch(error => console.log(error))
 //     .then(data => console.log(data))
     // .finaly(data => console.log(data))

@@ -75,7 +75,6 @@ const updateTask = (event) => {
         .find(task => task.id === +checkedElem.parentElement.dataset.id);
     taskById.done = checkedElem.checked;
     taskById.doneDate = taskById.done ? new Date() : null;
-    // listElem.innerHTML = '';
     renderTasks(tasks);
 };
 
@@ -83,6 +82,7 @@ const createTask = () => {
     if (inputElem.value === '') {
         return;
     }
+
 
     tasks.push({
         id: tasks.length + 1,

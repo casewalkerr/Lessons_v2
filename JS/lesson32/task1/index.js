@@ -1,5 +1,5 @@
 // asyncSum(asyncNum1, asyncNum2, ...)
-export const getValueWithDelay = (value, delay) => new Promise(resolve => {
+const getValueWithDelay = (value, delay) => new Promise(resolve => {
     setTimeout(() => {
         resolve(value)
     }, delay)
@@ -12,7 +12,7 @@ const getSum = numbers =>
     numbers
         .filter(value => !isNaN(value))
         .reduce((acc, num) => acc + Number(num), 0);
-const asyncSum = (...asyncNumbers) => {
+export const asyncSum = (...asyncNumbers) => {
     return Promise.alld(asyncNumbers)
         .then(numbers => getSum(numbers))
         .catch(() => Promise.reject(new Error('Can\'t calculate')))

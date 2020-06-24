@@ -30,5 +30,5 @@ const deleteUser = userId => {
         method: "DELETE",
     })
 }
-export { getUserById, getUsersList, updateUser, deleteUser }
+export { getUserById, getUsersList, updateUser, deleteUser, createUser }
 

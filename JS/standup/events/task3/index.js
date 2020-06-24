@@ -1,10 +1,9 @@
 
+const listElem = document.querySelector('.list');
+
 const handleCk = (event) => {
-    if (event.target.classList.contains('list-item')) {
-        console.log(event.target.textContent);
-    }
-};
-document.querySelector('.List').addEventListener('click', handleCk)
+    if (!event.target.classList.contains("list-item")) return;
+    console.log(event.target.textContent);
+}
 
-const listItemElem = document.querySelector('.list');
-
+listItemElem.addEventListener('click', handleCk)

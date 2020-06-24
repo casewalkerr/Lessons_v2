@@ -16,7 +16,7 @@ const createUser = Obj => {
 }
 
 const updateUser = (userId, Obj) => {
-    return fetch(`${userId}/${Obj}`, {
+    return fetch(`${baseUrl}/${userId}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -26,7 +26,7 @@ const updateUser = (userId, Obj) => {
 }
 
 const deleteUser = userId => {
-    fetch(`${baseUrl}/${userId}`, {
+    return fetch(`${baseUrl}/${userId}`, {
         method: "DELETE",
     })
 }

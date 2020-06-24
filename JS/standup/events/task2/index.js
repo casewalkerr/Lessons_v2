@@ -9,6 +9,7 @@ const formElem = document.querySelector('form')
 //  handle Submit: gather form data, create object, show alert 
 // 
 
+
 const validateEmali = () => {
     console.log('validateEmail')
 }

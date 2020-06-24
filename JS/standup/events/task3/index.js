@@ -6,4 +6,4 @@ const handleCk = (event) => {
     console.log(event.target.textContent);
 }
 
-listItemElem.addEventListener('click', handleCk)
+listElem.addEventListener('click', handleCk)
